@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator2</title>
+</head>
+<body>
+<h2>Calculator</h2>
+<table>
+    <tr>
+        <td colspan="2">
+            <label> <input type="number" id="number1" size="30" placeholder= 'Nhap so thu nhat'></label>
+        </td>
+        <td colspan="2">
+            <label> <input type="number" id="number2" size="30" placeholder= 'Nhap so thu hai'></label>
+        </td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="myFunction();">Tong(+)</button></td>
+        <td><button type="button" onclick="myFunction2();">Hieu(-)</button></td>
+        <td><button type="button" onclick="myFunction3();">Tich(*)</button></td>
+        <td><button type="button" onclick="myFunction4();">Thuong(/)</button></td>
+    </tr>
+</table><br>
+<p><b>Result</b></p>
+<p id="message"></p>
+<script>
+    function myFunction(){
+        let x= +document.getElementById('number1').value;
+        let y= +document.getElementById('number2').value;
+        document.getElementById('message'). innerHTML='ket qua='  +(x+y);
+    }
+
+    function myFunction2(){
+        let x= +document.getElementById('number1').value;
+        let y= +document.getElementById('number2').value;
+        document.getElementById('message'). innerHTML='ket qua=' +(x-y);
+    }
+    function myFunction3(){
+        let x= +document.getElementById('number1').value;
+        let y= +document.getElementById('number2').value;
+        document.getElementById('message'). innerHTML='ket qua=' +(x*y);
+    }
+    function myFunction4(){
+        let x= +document.getElementById('number1').value;
+        let y= +document.getElementById('number2').value;
+        document.getElementById('message'). innerHTML='ket qua=' +(x/y);
+    }
+
+</script>
+
+</body>
+</html>
