@@ -6,19 +6,18 @@
 </head>
 <body>
 
-<label><input type="number" id="index" value="0"></label>
-<button type="button" onclick="myFunction6();">up</button>
-<button type="button" onclick="myFunction7();">down</button>
-<p id="display"></p>
+
+<label><input type="number" id="num" value="0"></label>
+<button type="button" onclick="up()">up</button>
+<button type="button" onclick="down()">down</button>
 <script>
-  let x = +document.getElementById("index").value;
-  function myFunction6() {
-    x = +x+2;
-    document.getElementById('display').innerHTML = 'so nhap=' + x;
+  function up() {
+    let x = +document.getElementById("num").value;
+    document.getElementById("num").value = x + 2;
   }
-  function myFunction7() {
-    x = +x - 2;
-    document.getElementById('display').innerHTML = 'so nhap=' + x;
+  function down() {
+    let x = +document.getElementById("num").value;
+    document.getElementById("num").value = x - 2;
   }
 </script>
 </body>
